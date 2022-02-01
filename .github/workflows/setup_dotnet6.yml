@@ -1,0 +1,19 @@
+on: workflow_dispatch
+name: Configure DotNET 6 on Azure Function
+jobs:
+  configure-dotnet-6:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@main
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS_SUPER_SP }}
+    
+    - name: Configure DotNET 6 on Azure Function
+      uses: Azure/cli@v1
+      with:
+        inlineScript: |
+          az functionapp config set --net-framework-version v6.0 -n ${{ secrets.FUNCTIONAPP_NAME }} -g ${{ RESOURCE_GROUP_NAME }}
