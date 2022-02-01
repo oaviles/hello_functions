@@ -19,6 +19,6 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.RESOURCE_GROUP_NAME }}
-        template: ./IaC/azure-deploy.json
+        template: ./IaC/azure-deploy-fv4.json
         # parameters: storageAccounts_name=oamx
         parameters: ./IaC/parameters.json
