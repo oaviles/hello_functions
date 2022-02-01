@@ -39,7 +39,7 @@ namespace OA.Function
             Guid valueGuid = Guid.NewGuid();
 
             string responseMessage = string.IsNullOrEmpty(e)
-                ? "This HTTP triggered function executed successfully. Pass a event in the query string or in the request body to get event ID."
+                ? "Must need: Pass a event in the query string or in the request body to get event ID."
                 : $"This is your event ID: {valueGuid}";
 
             return new OkObjectResult(responseMessage);
