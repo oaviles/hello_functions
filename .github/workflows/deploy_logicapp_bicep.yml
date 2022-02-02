@@ -19,6 +19,6 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.RESOURCE_GROUP_NAME }}
-        template: ./IaC/deploy_logicapp_bicep
+        template: ./IaC/deploy_logicapp.bicep
         parameters: logicAppName=oalogicapplab1
         failOnStdErr: false
