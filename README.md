@@ -1,10 +1,14 @@
-# DevSquad Microservice Project (Serverless)
+# DevSquad Serverless Project
 
 This is a collection of sample projects for Cloud Application Developer using Azure Cloud Platform. The sample projects are arranged in different topics about microservice development and deployment on Azure Functions supported by Secure DevOps Practices.
 
-Deploy Microservice on Azure Funtions, reference architecture:
-[Deploy microservice on Azure Function (Serverless)](https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-functions-hybrid)
-![](https://docs.microsoft.com/en-us/azure/architecture/hybrid/images/azure-functions-hybrid.png)
+Deploy Serverless Application on Azure, reference architectures:
+
+[Deploy event driven architecture on Azure](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/serverless/cloud-automation)
+![](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/serverless/_images/cloud-automation.png)
+
+[Enterprise integration on Azure](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/basic-enterprise-integration)
+![](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/enterprise-integration/_images/simple-enterprise-integration.png)
 
 [CI/CD Reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=dotnet)
 
