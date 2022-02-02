@@ -1,5 +1,5 @@
 on: workflow_dispatch
-name: Depoy Logic App Service
+name: Depoy Logic App Service (Bicep)
 jobs:
   deploy-bicep-template:
     runs-on: ubuntu-latest
