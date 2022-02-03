@@ -29,7 +29,7 @@ namespace OA.Function
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("C# HTTP trigger function processed a request");
 
             string e = req.Query["event"];
 
@@ -39,7 +39,7 @@ namespace OA.Function
             Guid valueGuid = Guid.NewGuid();
 
             string responseMessage = string.IsNullOrEmpty(e)
-                ? "Must need: Pass an event in the query string or in the request body to get event ID."
+                ? "Must need: Pass an event in the query string or in the request body to get event ID"
                 : $"This is your event ID: {valueGuid}";
 
             return new OkObjectResult(responseMessage);
